@@ -8,6 +8,7 @@ import (
 func main() {
     fmt.Println("Structs in golang")
 
-    beki := models.User{"beki", "asda", true, 12}  // Use structs.User
-    fmt.Println(beki.Name)
+    beki := models.User{"beki", "asda", true, 12}
+
+    fmt.Println(beki)
 }
