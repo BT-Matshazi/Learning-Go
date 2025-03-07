@@ -6,36 +6,6 @@ import (
 	"fmt"
 )
 
-func main() {
-	// Create an unsorted integer array to be sorted
-	// The [...] syntax lets Go determine the array size based on the elements provided
-	var numArr = [...]int{42, 8, 17, 99, 4, 23, 56, 71, 13, 31}
-
-	// Make copies of the original array for each sorting method
-	// to demonstrate the different implementations
-	arr1 := make([]int, len(numArr))
-	arr2 := make([]int, len(numArr))
-	arr3 := make([]int, len(numArr))
-	
-	// Copy the original array to our working arrays
-	copy(arr1, numArr[:])
-	copy(arr2, numArr[:])
-	copy(arr3, numArr[:])
-
-	// Print the original unsorted array
-	fmt.Println("Original array:", numArr)
-
-	// Call each bubble sort implementation and print the results
-	fmt.Print("Basic bubble sort: ")
-	bubbleSort(arr1)
-
-	fmt.Print("Optimized bubble sort: ")
-	bubbleSortOptimized(arr2)
-
-	fmt.Print("Best bubble sort: ")
-	bubbleSortBest(arr3)
-}
-
 // bubbleSort implements the basic bubble sort algorithm.
 // This version uses a temporary variable for swapping elements.
 //
