@@ -19,7 +19,7 @@ func InsertionSort(arr []int) {
 	n := len(arr)
 	
 	// Start from the second element (index 1)
-	// The first element (index 0) is considered already sorted
+	// The first element (index 0) is	 considered already sorted
 	for i := 1; i < n; i++ {
 		// Store the current element that needs to be inserted
 		// into the correct position within the sorted portion
